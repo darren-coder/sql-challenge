@@ -1,4 +1,4 @@
---Emp #, last name, first name, sex, salary
+--1. Emp #, last name, first name, sex, salary
 
 SELECT
 	e.emp_no,
@@ -11,7 +11,7 @@ INNER JOIN salaries AS s ON
 e.emp_no = s.emp_no
 ;
 
---first name, last name, hire date for hires in 1986
+--2. first name, last name, hire date for hires in 1986
 
 SELECT
 	first_name,
@@ -69,7 +69,7 @@ INNER JOIN employees AS e ON de.emp_no = e.emp_no
 WHERE d.dept_name = 'Sales'
 ;
 
---7. Sales and Development: employee #, last naem, first name, department name
+--7. Sales and Development: employee #, last name, first name, department name
 
 SELECT
 	de.emp_no,
